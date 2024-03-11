@@ -37,7 +37,8 @@
     position: absolute;
     font-size: 14px;
     font-weight: 500;
-    transform: translate(-50px, 16px);
+    right: 13px;
+    top: 16px;
     cursor: pointer;
 }
 .button-password:hover{

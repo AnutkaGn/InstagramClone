@@ -39,11 +39,12 @@ const LogIn = () => {
             <img className='img-instagram' src="assets/Instagram_logo.png" alt="Instagram"/>   
             <input className='input-text' type="text" name="login" placeholder='Phone number, username, or email' ref={loginRef}/>     
             <div className='box__input-password'>
-                <input className='input-text' type="password" name="Password" placeholder='Password' onChange={e => setPassword(e.target.value)} ref={passwordRef}/>     
+                <input className='input-text' type="password" name="Password" placeholder='Password' onChange={e => setPassword(e.target.value)} ref={passwordRef}/>  
+                   
                 {password && showPassword && <span className='button-password' onMouseDown={() => show()}>Show</span>}
                 {password && !showPassword && <span className='button-password' onMouseDown={() => hide()}>Hide</span>}
             </div>
-            <input onClick={() => handleClick(loginRef.current.value, password)} className='input-button-login' type="button" value="Log in" />
+            <div style={{alignSelf:"center"}}><input onClick={() => handleClick(loginRef.current.value, password)} className='input-button-login' type="button" value="Log in" /></div>
             <div className='box-OR'>
                 <div className='box-OR__line'></div>
                 <div className='box-OR__text'>OR</div>
